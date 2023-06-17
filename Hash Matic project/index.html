@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Hash Matic</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <div class="banner">
+              <div class="navbar">
+                <div class="logo"><a href="#"></a></div>
+                <ul class="links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+                <a href="#" class="action-btn">Contact Us</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="dropdown_menu">
+                <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li> <a href="#" class="action-btn">Contact Us</a></li>
+            </div>
+
+            <script>
+                const toggleBtn = document.querySelector('toggle_btn')
+                const toggleBtnIcon = document.querySelector('toggle_btn i')
+                const dropDownMenu= document.querySelector('dropdown_menu')
+
+                toggleBtn.onclick = function(){
+                    dropdown.classList.toggle('open')
+                    const isOpen = dropDownMenu.classList.contains('open')
+
+                    toggleBtnIcone.classList = isOpen
+                    'fa-solid fa-bars'
+                    'fa-solid fa-xmark'
+                }
+            </script>
+
+              <div class="content">
+                <h1>We Design, Develop, And <span> Deliver <br>With Confidence</span></h1>
+                <p>We are a dedicated design & development team for your business  ideas to build your <br> dream products with our expertise</p>
+            <div>
+                <button type="button">Get Started</button>
+                <button type="button">Portfolio</button>
+            </div> 
+            </div>
+        </div>
+    </body>
+</html>
